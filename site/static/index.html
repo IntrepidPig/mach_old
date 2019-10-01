@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MaCh - Machine Chess</title>
+		<script src="/static/game.js"></script>
+		<link href="/static/stylesheet.css" rel="stylesheet">
+		<script>
+			init();
+		</script>
+	</head>
+	<body>
+		<div class="main-content-container">
+			<div class="join-game-container">
+				<label>Game Id:</label>
+				<input id="game-name-input" type="text">
+				<button id="join-game-button" onclick="joinGameButtonClicked()">Join Game</button>
+				<button id="join-game-button" onclick="hostGameButtonClicked()">Host Game</button>
+			</div>
+			<br>
+			<h2 id="game-name-header"></h2>
+			<br>
+			<div class="scores-container">
+				<div class="score-container">
+					<label class="score-label">Player One Score</label>
+					<p id="p1score">0</p>
+				</div>
+				<div class="score-container">
+					<label class="score-label">Player Two Score</label>
+					<p id="p2score">0</p>
+				</div>
+			</div>
+			<button onclick="scoreIncreaseButtonClicked()">Increase Score</button>
+			<p id="status-line"></p>
+			<pre id="game-logs"></pre>
+		</div>
+	</body>
+</html>

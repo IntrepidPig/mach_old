@@ -1,0 +1,17 @@
+[package]
+name = "mach_backend"
+version = "0.0.1"
+edition = "2018"
+
+[dependencies]
+hyper = { version = "0.13.0-alpha.2", features = ["unstable-stream"] }
+#hyper = { path = "../../hyper" }
+futures-preview = { version = "0.3.0-alpha.18", features = ["async-await", "nightly"] }
+tokio = "0.2.0-alpha.5"
+
+snafu = "0.5.0"
+log = "0.4.8"
+fern = "0.5.8"
+serde = "1.0.101"
+serde_json = "1.0.40"
+serde_derive = "1.0.101"
